@@ -1,0 +1,220 @@
+.BasicButton {
+    border:solid;
+    color: black;
+    padding: 15px 32px;
+    border-style: inset; 
+    border-color:blue;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius:10px;
+    outline:none;
+}
+
+.BasicButton:hover {
+    border:solid;
+    color: black;
+    padding: 15px 32px;
+    border-style: inset; 
+    background-color: blue;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius:10px;
+    outline:none;
+}
+
+.PrimaryButton {
+    border:solid;
+    color:white;
+    padding:15px 32px;
+    text-align:center;
+    text-decoration:none;
+    display:inline-block;
+    font-size:16px;
+    border-radius:31px;
+    background-color:#00BBFF;
+    outline:none;
+}
+
+.PrimaryButton:hover {
+    border:solid;
+    color:#00BBFF;
+    padding:15px 32px;
+    text-align:center;
+    text-decoration:none;
+    display:inline-block;
+    font-size:16px;
+    border-radius:31px;
+    background-color:white;
+    outline:none;
+}
+
+.DangerButton {
+    border:solid;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius:31px;
+    background-color:#880000;
+    outline:none;
+}
+
+.DangerButton:hover {
+    border:solid;
+    color: #880000;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius:31px;
+    background-color:white;
+    outline:none;
+}
+.AlertButton {
+    border:solid;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius:31px;
+    background-color:#BB5500;
+    outline:none;
+}
+
+.AlertButton:hover {
+    border:solid;
+    color: #BB5500;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius:31px;
+    background-color:white;
+    outline:none;
+}
+.SuccessButton {
+    border:solid;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration:none;
+    display:inline-block;
+    font-size:16px;
+    border-radius:31px; 
+    background-color:#008800;
+    outline:none;
+}
+
+.SuccessButton:hover {
+    border:solid;
+    color: #008800;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration:none;
+    display:inline-block;
+    font-size:16px;
+    border-radius:31px; 
+    background-color:white;
+    outline:none;
+}
+.hidden {
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+}
+input[type=checkbox] + span {
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    border-radius: 5px;
+    background-color: gray;
+    /* active style goes here */
+}
+input[type=checkbox]:checked + span {
+    background-color: blue;
+}
+.txt {
+    position: relative;
+    top: -4px;
+    left: 3px;
+}
+span {
+    position: relative;
+}
+.CircleCheckbox {
+    position: absolute;
+    visibility: hidden;
+}
+.CircleCheckbox+label {
+    position:absolute;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #A6A6A6;
+    border-radius: 50%;
+    background-color:#DEDEDE;
+} 
+.CircleCheckbox:checked+label:after {
+    content: "";
+    position: absolute;
+    left: 2px;
+    top:2px;
+    width: 9px;
+    height: 4px;
+    border: 2px solid #424242;
+    border-top-color: transparent;
+    border-right-color: transparent; 
+    transform: rotate(-45deg);
+    -ms-transform: rotate(-60deg);
+    -moz-transform: rotate(-60deg);
+    -webkit-transform: rotate(-60deg);
+}
+.bordered > input[type=checkbox]:checked + span {
+    background-color: blue;
+}
+.bordered > input[type=checkbox] + span {
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    border-radius: 5px;
+    background-color: white;
+    border: gray;
+    border-width: 2px;
+    border-style:solid
+}
+.ShadowedDropdown{
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 5px #ccc;
+    position: relative;
+}
+.ShadowedDropdown>select{
+    border-radius: 10px;
+    outline: none;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    appearance: menu;
+    -webkit-appearance: menu;
+    -moz-appearance: menu;
+    padding-left: 60px;
+}
+.ShadowedDropdown:after{
+    content: "";
+    width: 14px;
+    height: 8px;
+    position: absolute;
+    right: 20px;
+    top: 45%;
+    pointer-events: none;
+}
